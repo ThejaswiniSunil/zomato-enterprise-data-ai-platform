@@ -14,7 +14,10 @@
   <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Streamlit" />
 </p>
 
-**A batch data engineering project that combines cloud ingestion, warehouse modelling, orchestration, and generative AI.**
+
+<img src="docs/architecture.png" alt="Zomato Enterprise Data and AI Platform Architecture" width="100%"/>
+
+**An end-to-end data engineering and AI platform for scalable ingestion, transformation, analytics, and intelligent data applications.**
 
 </div>
 
@@ -30,7 +33,7 @@ An AI layer extends the warehouse with review enrichment, retrieval-augmented ge
 
 `CSV datasets → Amazon S3 → Snowflake → dbt → Airflow → OpenAI-powered analytics → Streamlit`
 
-> **Dataset note:** The source data directory is intentionally excluded from this repository because the CSV collection is large. See [Dataset access](#dataset-access) for the project dataset location and expected files.
+> **Dataset note:** The source data directory is intentionally excluded from this repository because the CSV collection is large. 
 
 ## Architecture
 
@@ -93,7 +96,7 @@ The project documentation describes generated fact data at approximately **10 mi
 
 ### Dataset access
 
-The CSV data is not committed to GitHub because of its size. The original project dataset is available through this [Google Drive folder](https://drive.google.com/drive/folders/1FEnGWMHhHzzTUCZOw1-YnH2v3DMuM-rs?usp=sharing). Download the files and place them in the local `data/` directory before uploading them to S3.
+The CSV data is not committed to GitHub because of its size. 
 
 Expected S3 layout:
 
@@ -299,9 +302,9 @@ This is a cloud-integrated project. A complete run requires AWS, Snowflake, and 
 
 ### Step 1 — Prepare the dataset and S3 bucket
 
-1. Download the seven CSV files from the [dataset folder](https://drive.google.com/drive/folders/1FEnGWMHhHzzTUCZOw1-YnH2v3DMuM-rs?usp=sharing).
+1. Download the seven CSV files
 2. Create an S3 bucket.
-3. Upload each CSV to its matching `raw/<table>/` prefix as shown in the [dataset layout](#dataset).
+3. Upload each CSV to its matching `raw/<table>/` prefix as shown 
 
 ### Step 2 — Configure AWS and Snowflake access
 
@@ -427,7 +430,7 @@ The repository demonstrates the end-to-end design and the core components descri
 ## Author
 
 **Thejaswini Sunil**  
-[GitHub](https://github.com/ThejaswiniSunil) · [Portfolio](https://thejaswinisunil-portfolio.netlify.app)
+[GitHub](https://github.com/ThejaswiniSunil) 
 
 ---
 
